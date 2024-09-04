@@ -84,6 +84,30 @@ body {
   margin: 0 auto;
 }
 
+.title-bg {
+  font-family: "Playfair Display", "Times New Roman";
+  font-size: 110px;
+  font-weight: 400;
+  line-height: 146.63px;
+  color: rgba(255, 255, 255, 0.1019607843);
+}
+
+.title {
+  font-family: "Playfair Display", "Times New Roman";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 63.98px;
+  color: #ffffff;
+  margin-top: -80px;
+}
+
+.title-info {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36.57px;
+  color: #ffffff;
+}
+
 .btn {
   font-size: 16px;
   font-weight: 400;
@@ -115,6 +139,14 @@ body {
   width: 100%;
   padding: 20px 0;
   z-index: 999;
+  transition: all 0.5s ease-in-out;
+}
+.header.fixed {
+  background: rgba(51, 51, 51, 0.95);
+}
+.header.fixed .header-logo__img {
+  transform: scale(1) !important;
+  margin: 0;
 }
 .header .container {
   display: flex;
@@ -127,8 +159,12 @@ body {
   gap: 20px;
 }
 .header-logo__img {
-  width: 113px;
-  height: 113px;
+  width: 70px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.4);
+  margin-right: 20px;
 }
 .header-logo__info {
   font-size: 14px;
@@ -202,6 +238,89 @@ body {
 }
 .intro .btn {
   margin-top: 350px;
+}
+
+.kitchen {
+  padding: 193px 0 120px 0;
+}
+.kitchen .title-box {
+  text-align: center;
+  padding-bottom: 212px;
+}
+.kitchen .title-box .title {
+  margin-bottom: 80px;
+}
+.kitchen-boxes {
+  display: flex;
+  gap: 40px;
+  align-items: start;
+}
+.kitchen .right-box {
+  margin-top: 120px;
+  width: 100%;
+}
+.kitchen .right-box .btn {
+  margin: 80px 80px 0 auto;
+  width: fit-content;
+}
+.kitchen-box {
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2509803922);
+  height: 636px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  padding: 40px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.kitchen-box:hover {
+  transform: scale(1.02);
+}
+.kitchen-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.1), #222);
+  z-index: 0;
+}
+.kitchen-box .kitchen-img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -2;
+}
+.kitchen-box__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.kitchen-box .kitchen-title {
+  font-family: "Playfair Display", "Times New Roman";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 63.98px;
+}
+.kitchen-box .kitchen-info {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  padding: 30px 0 25px 0;
+}
+.kitchen-box .kitchen-model__link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: #fff;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */

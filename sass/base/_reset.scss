@@ -43,21 +43,25 @@ button {
 input:focus {
   outline: none !important;
 }
+
 ul,
 ol {
   padding: 0;
   list-style: none;
   margin: 0;
 }
+
 a {
   display: inline-block;
 }
+
 a:active,
 a:focus {
   outline: 0;
   border: none;
   -moz-outline-style: none;
 }
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
@@ -76,10 +80,35 @@ body {
 .wrapper {
   overflow: hidden;
 }
+
 .container {
   max-width: 1840px;
   margin: 0 auto;
 }
-main {
-  // margin-top: 153px;
+
+// title
+.title-bg {
+  font-family: 'Playfair Display', 'Times New Roman';
+  font-size: 110px;
+  font-weight: 400;
+  line-height: 146.63px;
+  color: #FFFFFF1A;
 }
+
+.title {
+  font-family: 'Playfair Display', 'Times New Roman';
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 63.98px;
+  color: #ffffff;
+  margin-top: -80px;
+}
+
+.title-info {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36.57px;
+color: #ffffff;
+}
+
+// title
