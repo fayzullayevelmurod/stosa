@@ -1,0 +1,26 @@
+// intro start
+.intro {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url(../../images/intro-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+z-index: 1;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(51, 51, 51, 0.75) 0%, rgba(51, 51, 51, 0) 100%);
+  }
+
+  .btn {
+    margin-top: 350px;
+  }
+}
+// intro end

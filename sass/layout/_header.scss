@@ -1,0 +1,82 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 999;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &__img {
+      width: 113px;
+      height: 113px;
+    }
+
+    &__info {
+      font-size: 14px;
+      line-height: 21px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      transition: all .2s linear;
+
+      &:hover {
+        color: #d9d9d9;
+      }
+    }
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 30px;
+
+    .nav-link {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17.07px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      transition: all .2s linear;
+
+      &:hover {
+        color: #d9d9d9;
+      }
+    }
+  }
+
+  .phone-number {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36.57px;
+    color: #FFFFFF;
+    transition: all .2s linear;
+
+    &:hover {
+      color: #d9d9d9;
+    }
+  }
+
+  .email-address {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    padding-top: 15px;
+    display: block;
+    transition: all .2s linear;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: right;
+
+    &:hover {
+      color: #d9d9d9;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.btn {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: #ffffff;
+  border: 2px solid #FFFFFF;
+  padding: 30px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all .2s linear;
+
+  path {
+    transition: all .2s linear;
+  }
+
+  &:hover {
+    background: #ffffff;
+    color: #333333;
+
+    path {
+      stroke: #333333;
+    }
+  }
+}

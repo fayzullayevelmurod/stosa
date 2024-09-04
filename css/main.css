@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 /* Core style */
 html {
   box-sizing: border-box;
@@ -66,13 +67,141 @@ input[type=search]::-webkit-search-results-decoration {
   display: none;
 }
 
+body {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #333333;
+}
+
 .wrapper {
   overflow: hidden;
 }
 
 .container {
-  max-width: 1464px;
+  max-width: 1840px;
   margin: 0 auto;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: #ffffff;
+  border: 2px solid #FFFFFF;
+  padding: 30px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.2s linear;
+}
+.btn path {
+  transition: all 0.2s linear;
+}
+.btn:hover {
+  background: #ffffff;
+  color: #333333;
+}
+.btn:hover path {
+  stroke: #333333;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 999;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-logo__img {
+  width: 113px;
+  height: 113px;
+}
+.header-logo__info {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: all 0.2s linear;
+}
+.header-logo__info:hover {
+  color: #d9d9d9;
+}
+.header .nav-list {
+  display: flex;
+  gap: 30px;
+}
+.header .nav-list .nav-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+.header .nav-list .nav-link:hover {
+  color: #d9d9d9;
+}
+.header .phone-number {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36.57px;
+  color: #FFFFFF;
+  transition: all 0.2s linear;
+}
+.header .phone-number:hover {
+  color: #d9d9d9;
+}
+.header .email-address {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  padding-top: 15px;
+  display: block;
+  transition: all 0.2s linear;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: right;
+}
+.header .email-address:hover {
+  color: #d9d9d9;
+}
+
+.intro {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url(../../images/intro-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+.intro::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(51, 51, 51, 0.75) 0%, rgba(51, 51, 51, 0) 100%);
+}
+.intro .btn {
+  margin-top: 350px;
 }
 
 /*# sourceMappingURL=main.css.map */
