@@ -616,6 +616,13 @@ body {
   position: relative;
   z-index: 1;
 }
+.products .product-img__box .title,
+.products .product-img__box .title-bg {
+  transition: all 0.2s ease-in-out;
+}
+.products .product-img__box:hover .title {
+  color: #d9d9d9;
+}
 .products .product-img__box .product-img {
   width: 100%;
   height: 100%;
