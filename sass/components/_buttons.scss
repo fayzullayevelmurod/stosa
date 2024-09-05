@@ -16,12 +16,18 @@
     transition: all .2s linear;
   }
 
-  &:hover {
+  &:hover ,
+  &.white-bg{
     background: #ffffff;
     color: #333333;
 
     path {
       stroke: #333333;
+    }
+  }
+  &.white-bg {
+    &:hover {
+      background: #ececec;
     }
   }
 }

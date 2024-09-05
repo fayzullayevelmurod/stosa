@@ -235,17 +235,16 @@
     }
 
     .content-title {
-      margin: 100px 0 80px;
       font-family: 'Playfair Display', 'Times New Roman';
       font-weight: 400;
       line-height: normal;
       font-size: 48px;
+      margin: 100px 0 80px 0;
       line-height: normal;
     }
 
     .content-info {
       font-size: 16px;
-      margin-bottom: 66px;
       line-height: 1.7;
     }
   }
@@ -259,7 +258,7 @@
     flex-direction: column;
     justify-content: space-between;
     background: linear-gradient(180deg, rgba(34, 34, 34, .2), #222);
-    padding: 30px;
+    padding: 30px 30px 0 30px;
 
     .btn {
       margin-top: auto;
@@ -268,3 +267,82 @@
 }
 
 // why-stosa end
+
+// news-events
+.news-events {
+  margin: 120px 0;
+
+  .title-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  .title-box {
+    .title-bg {
+      margin-left: -236px;
+    }
+
+    .title {
+      margin-left: 335px;
+    }
+  }
+
+  .siper-btns {
+    display: flex;
+    gap: 120px;
+
+    .swiper-btn {
+      width: 75px;
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #FFFFFF;
+      border-radius: 50%;
+    }
+  }
+
+  .btn.white-bg {
+    margin: 80px auto 0 auto;
+  }
+
+  &__swiper {
+    user-select: none;
+
+    .swiper-wrapper {
+      align-items: stretch;
+    }
+
+    .swiper-slide {
+      height: unset;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &-img {
+      height: 353px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    &-title {
+      font-family: 'Playfair Display', 'Times New Roman';
+      font-size: 30px;
+      font-weight: 400;
+      margin-top: 30px;
+      line-height: 39.99px;
+    }
+
+    &-info {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 30px 0 80px 0;
+    }
+  }
+}
+
+// news-events

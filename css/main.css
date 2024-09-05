@@ -125,12 +125,15 @@ body {
 .btn path {
   transition: all 0.2s linear;
 }
-.btn:hover {
+.btn:hover, .btn.white-bg {
   background: #ffffff;
   color: #333333;
 }
-.btn:hover path {
+.btn:hover path, .btn.white-bg path {
   stroke: #333333;
+}
+.btn.white-bg:hover {
+  background: #ececec;
 }
 
 .header {
@@ -214,6 +217,56 @@ body {
   text-align: right;
 }
 .header .email-address:hover {
+  color: #d9d9d9;
+}
+
+.footer .line {
+  width: 500px;
+  border: 2px solid #FFFFFF;
+  margin: 0 auto;
+}
+.footer nav {
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer-list__link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.footer-list__link:hover {
+  color: #d9d9d9;
+}
+.footer-bottom {
+  padding: 80px 0;
+  border-top: 2px solid #fff;
+  text-align: center;
+}
+.footer-bottom .copyright {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.07px;
+}
+.footer-bottom .info {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  margin-top: 30px;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.footer-bottom .info:hover {
   color: #d9d9d9;
 }
 
@@ -414,16 +467,15 @@ body {
   transform: rotate(45deg);
 }
 .why-stosa__card .content-title {
-  margin: 100px 0 80px;
   font-family: "Playfair Display", "Times New Roman";
   font-weight: 400;
   line-height: normal;
   font-size: 48px;
+  margin: 100px 0 80px 0;
   line-height: normal;
 }
 .why-stosa__card .content-info {
   font-size: 16px;
-  margin-bottom: 66px;
   line-height: 1.7;
 }
 .why-stosa__content {
@@ -435,10 +487,72 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background: linear-gradient(180deg, rgba(34, 34, 34, 0.2), #222);
-  padding: 30px;
+  padding: 30px 30px 0 30px;
 }
 .why-stosa__content .btn {
   margin-top: auto;
+}
+
+.news-events {
+  margin: 120px 0;
+}
+.news-events .title-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.news-events .title-box .title-bg {
+  margin-left: -236px;
+}
+.news-events .title-box .title {
+  margin-left: 335px;
+}
+.news-events .siper-btns {
+  display: flex;
+  gap: 120px;
+}
+.news-events .siper-btns .swiper-btn {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+}
+.news-events .btn.white-bg {
+  margin: 80px auto 0 auto;
+}
+.news-events__swiper {
+  user-select: none;
+}
+.news-events__swiper .swiper-wrapper {
+  align-items: stretch;
+}
+.news-events__swiper .swiper-slide {
+  height: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.news-events__swiper-img {
+  height: 353px;
+  object-fit: cover;
+  width: 100%;
+}
+.news-events__swiper-title {
+  font-family: "Playfair Display", "Times New Roman";
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 30px;
+  line-height: 39.99px;
+}
+.news-events__swiper-info {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 30px 0 80px 0;
 }
 
 /*# sourceMappingURL=main.css.map */
