@@ -120,6 +120,7 @@ body {
   align-items: center;
   gap: 20px;
   transition: all 0.2s linear;
+  width: fit-content;
 }
 .btn path {
   transition: all 0.2s linear;
@@ -321,6 +322,123 @@ body {
   line-height: 19.5px;
   color: #fff;
   text-decoration: underline;
+}
+.kitchen .stosa-green {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding-right: 80px;
+}
+.kitchen .stosa-green .title {
+  margin-bottom: 80px;
+}
+.kitchen .stosa-green__img {
+  width: 980px;
+  height: 850px;
+}
+.kitchen .stosa-green__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.kitchen .stosa-green__content {
+  max-width: 666px;
+  width: 100%;
+}
+.kitchen .stosa-green__info {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 80px 0;
+}
+.kitchen .stosa-green .btn {
+  width: fit-content;
+}
+
+.why-stosa .title-box {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.why-stosa__cards {
+  display: flex;
+  justify-content: center;
+}
+.why-stosa__card {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+  max-width: 760px;
+  overflow: hidden;
+  height: 700px;
+  width: 20%;
+}
+.why-stosa__card.active {
+  width: 50% !important;
+}
+.why-stosa__card.active .why-stosa__content {
+  opacity: 1;
+  transition: 0.3s ease-in-out 0.3s;
+}
+.why-stosa__card.active .why-stosa__card-img {
+  filter: none !important;
+  transition: all 0.3s ease-in-out, filter 0.3s;
+}
+.why-stosa__card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: grayscale(1);
+  transition: all 0.3s ease-in-out, filter 0.3s 0.3s;
+}
+.why-stosa__card .plus-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 75px;
+  height: 75px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  z-index: 1;
+}
+.why-stosa__card .plus-btn.active {
+  transform: rotate(45deg);
+}
+.why-stosa__card .content-title {
+  margin: 100px 0 80px;
+  font-family: "Playfair Display", "Times New Roman";
+  font-weight: 400;
+  line-height: normal;
+  font-size: 48px;
+  line-height: normal;
+}
+.why-stosa__card .content-info {
+  font-size: 16px;
+  margin-bottom: 66px;
+  line-height: 1.7;
+}
+.why-stosa__content {
+  margin-top: auto;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(180deg, rgba(34, 34, 34, 0.2), #222);
+  padding: 30px;
+}
+.why-stosa__content .btn {
+  margin-top: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
