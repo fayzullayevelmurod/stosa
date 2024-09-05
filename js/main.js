@@ -64,4 +64,59 @@ window.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  // stosa-palio__swiper
+  const swiper2 = new Swiper('.stosa-palio__swiper', {
+    slidesPerView: 3, // Bir vaqtda ko'rsatiladigan slaydlar soni
+    spaceBetween: 40, // Slaydlar o'rtasidagi masofa (px)
+    speed: 700, // Slayder tezligi
+    // centeredSlides: true, // Slayder markazlash
+    pagination: {
+      el: '.swiper-pagination', // Paginatsiya elementini belgilash
+      clickable: true, // Paginatsiyani bosiladigan qilish
+      type: 'custom',
+      renderCustom: function (swiper, current, total) {
+        let paginationHTML = '';
+        for (let i = 1; i <= total; i++) {
+          if (i === current) {
+            paginationHTML += '<span class="swiper-pagination-bullet swiper-pagination-bullet-active">0' + i + '</span>';
+          } else {
+            paginationHTML += '<span class="swiper-pagination-bullet">0' + i + '</span>';
+          }
+        }
+        return paginationHTML;
+      }
+    },
+  });
+
+  // tabs
+  try {
+    const tabItems = document.querySelectorAll('.tab-item');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    function hideTabContent() {
+      tabContents.forEach(tabContent => tabContent.classList.remove('show'));
+      tabItems.forEach(tabItem => tabItem.classList.remove('active'));
+    }
+    function showTabContent(idx = 0) {
+      tabContents[idx].classList.add('show');
+      tabItems[idx].classList.add('active');
+    }
+    hideTabContent();
+    showTabContent();
+
+    tabContents.forEach((el, index) => {
+      tabItems.forEach((btn, idx) => {
+        btn.addEventListener('click', (e) => {
+          if (index == idx) {
+            hideTabContent();
+            showTabContent(idx);
+          }
+        })
+      })
+    })
+
+  } catch (error) {
+    console.log(error);
+
+  }
 })

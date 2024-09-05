@@ -566,11 +566,11 @@ body {
 .modern-kitchen__page .intro .bottom-content {
   max-width: 627px;
   background: rgba(51, 51, 51, 0.7490196078);
-  padding: 50px 60px 60px 60px;
+  padding: 50px 60px;
   white-space: nowrap;
 }
 .modern-kitchen__page .intro .title {
-  margin-left: -57px;
+  text-align: left;
 }
 
 .products {
@@ -689,6 +689,214 @@ body {
 }
 .products .art-series .btn {
   margin-top: 30px;
+}
+
+.kitchen-page .intro .bottom-content {
+  max-width: 363px;
+}
+.kitchen-page .intro .bottom-content .title {
+  text-align: left;
+}
+
+.stosa-palio__content {
+  padding: 80px 0 120px 180px;
+}
+.stosa-palio .navigate-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  color: #fff;
+  margin-bottom: 62px;
+}
+.stosa-palio .navigate-btn svg {
+  transform: rotate(180deg);
+}
+.stosa-palio .title {
+  margin-top: 0;
+}
+.stosa-palio .sub-title {
+  margin: 80px 0 40px 0;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36.57px;
+}
+.stosa-palio .desc-box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.stosa-palio .desc-box .desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.stosa-palio__boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stosa-palio__boxes .left-box {
+  max-width: 570px;
+}
+.stosa-palio__boxes .img-box {
+  height: 630px;
+}
+.stosa-palio__boxes .right-box {
+  max-width: 880px;
+  width: 100%;
+}
+.stosa-palio__boxes .right-box img {
+  width: 100%;
+  height: 100%;
+}
+.stosa-palio__boxes.bottom-box {
+  margin-top: 80px;
+}
+.stosa-palio__swiper {
+  margin-bottom: 110px;
+  position: relative;
+  padding-bottom: 80px;
+}
+.stosa-palio__swiper .swiper-slide {
+  height: 500px;
+}
+.stosa-palio__swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.stosa-palio__swiper .swiper-pagination {
+  display: flex;
+  margin-left: 180px;
+  gap: 30px;
+  top: unset;
+  bottom: 0;
+}
+.stosa-palio__swiper .swiper-pagination .swiper-pagination-bullet {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.2509803922);
+  opacity: 1;
+  width: unset;
+  height: unset;
+  background: transparent;
+  cursor: pointer;
+}
+.stosa-palio__swiper .swiper-pagination .swiper-pagination-bullet-active {
+  color: #fff;
+}
+
+.colors-finishes {
+  padding-left: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.colors-finishes .content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: calc(100% - 1314px);
+}
+.colors-finishes .content-box .title-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+}
+.colors-finishes .content-box .title {
+  margin-top: 65px;
+}
+.colors-finishes .tabs {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  height: 940px;
+  justify-content: end;
+  max-width: 1314px;
+  gap: 30px;
+  width: 100%;
+}
+.colors-finishes .tab-contents {
+  height: 100%;
+  max-width: 1104px;
+}
+.colors-finishes .tab-content {
+  height: 100%;
+  display: none;
+  animation: fade 0.8s ease-in-out;
+}
+.colors-finishes .tab-content.show {
+  display: block;
+}
+.colors-finishes .tab-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.colors-finishes .tab-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.colors-finishes .tab-items .tab-item {
+  width: 250px;
+  height: 140px;
+  margin-right: -60px;
+  transition: all 0.3s ease-in-out;
+}
+.colors-finishes .tab-items .tab-item.active {
+  transform: translateX(-60px);
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.7490196078);
+}
+.colors-finishes .tab-items .color-img {
+  width: 100%;
+  height: 100%;
+}
+.colors-finishes .bottom-content .watch-more {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36.57px;
+  margin-bottom: 30px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.certified-quality {
+  margin: 120px 0;
+}
+.certified-quality .title-box {
+  text-align: center;
+}
+.certified-quality .certificates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 80px;
+}
+.certified-quality .certificate {
+  max-width: 260px;
+  text-align: center;
+}
+.certified-quality .certificate .certificate-name {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
 }
 
 /*# sourceMappingURL=main.css.map */
