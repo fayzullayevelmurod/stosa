@@ -44,6 +44,7 @@
     display: flex;
     gap: 40px;
     align-items: start;
+    margin-bottom: 100px;
   }
 
   .right-box {
@@ -170,6 +171,10 @@
   .title-box {
     text-align: center;
     margin-bottom: 80px;
+
+    .title-bg {
+      text-transform: up;
+    }
   }
 
   &__cards {

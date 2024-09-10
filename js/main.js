@@ -1,6 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
+  AOS.init();
+
   // fixed header
   const header = document.querySelector('header');
   const sticky = header.offsetTop;
@@ -10,6 +12,20 @@ window.addEventListener('DOMContentLoaded', () => {
     } else {
       header.classList.remove('fixed')
     }
+  })
+
+  // media menu
+  const headerMenu = document.querySelector('.header-nav__right');
+  const openHeaderMenuBtn = document.querySelector('.header-menu__btn');
+
+  openHeaderMenuBtn.addEventListener('click', () => {
+    if (window.pageYOffset === 0) {
+      header.classList.toggle('fixed');
+    } else if (!header.classList.contains('fixed')) {
+      header.classList.add('fixed');
+    }
+    headerMenu.classList.toggle('active');
+    openHeaderMenuBtn.classList.toggle('active');
   })
 
   // why-stosa__card
@@ -40,24 +56,23 @@ window.addEventListener('DOMContentLoaded', () => {
   // news-events__swiper
   // Swiperni initsializatsiya qilish
   const swiper = new Swiper('.news-events__swiper', {
-    slidesPerView: 3.5, // Bir vaqtda ko'rsatiladigan slaydlar soni
-    spaceBetween: 40, // Slaydlar o'rtasidagi masofa (px)
+    slidesPerView: 3.5, 
+    spaceBetween: 40,
     navigation: {
       nextEl: '.news-events__swiper-next',
       prevEl: '.news-events__swiper-prev',
     },
     speed: 700,
-    // Qo'shimcha sozlamalar (masalan, responsive)
     breakpoints: {
-      640: {
+      0: {
         slidesPerView: 1,
         spaceBetween: 20,
       },
-      768: {
+      992: {
         slidesPerView: 2,
         spaceBetween: 30,
       },
-      1024: {
+      1200: {
         slidesPerView: 3,
         spaceBetween: 40,
       },
