@@ -1,266 +1,281 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <!-- icon -->
-  <link rel="icon" href="images/company-logo.png" />
-  <!-- swiper css link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <!-- normalize css -->
-  <link rel="stylesheet" href="libs/normalize.css" />
-  <!-- custo css link -->
-  <link rel="stylesheet" href="./css/main.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- icon -->
+    <link rel="icon" href="images/company-logo.png" />
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="libs/normalize.css" />
+    <!-- custo css link -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-<body>
-  <div class="wrapper modern-kitchen__page">
-    <!-- header -->
-    <header class="header">
-      <div class="container">
-        <a class="header-logo" href="#!">
-          <img class="header-logo__img" src="images/company-logo.png" alt="company-logo" />
-          <span class="header-logo__info">официальный <br />
-            дилер</span>
-        </a>
-        <nav>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Современные кухни</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="kitchen.html">Классические кухни</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Гостиные и столовые</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Адреса салонов</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Почему именно stosa</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-right">
-          <a class="phone-number" href="tel:+74951267728">+7 (495) 126-77-28</a>
-          <a class="email-address" href="mailto:info@stosa-shop.com">info@stosa-shop.com</a>
-        </div>
-      </div>
-    </header>
-    <!-- header -->
+  <body>
+    <div class="wrapper modern-kitchen__page">
 
-    <!-- main -->
-    <main class="main">
-      <!-- hero -->
-      <section class="intro">
-        <img src="images/hero" alt="" />
-        <div class="bottom-content">
-          <h2 class="title-bg">Современная кухня</h2>
-          <h3 class="title">Современная кухня</h3>
-        </div>
-      </section>
-      <!-- hero -->
-
-      <!-- products -->
-      <section class="products">
-        <div class="products-boxes">
-          <div class="product-box left-box">
-            <a class="product-img__box" href="#!">
-              <img class="product-img" src="images/product-1.jfif" alt="product img" />
-              <img class="product-img__bg" src="images/product-1.jfif" alt="product img" />
-              <div class="product-title">
-                <h2 class="title-bg">Palio</h2>
-                <h3 class="title">Palio</h3>
-              </div>
+      <!-- header -->
+      <header class="header">
+        <div class="container">
+          <div class="header-left">
+            <a class="header-logo" href="index.html">
+              <img class="header-logo__img" src="images/company-logo.png" alt="company-logo">
+              <span class="header-logo__info">официальный <br> дилер</span>
             </a>
-            <div class="product-content">
-              <p class="product-info">
-                идеальное сочетание <br />
-                старинных традиций и современной строгости
-              </p>
-              <a class="btn" href="#!">
-                <span>Подробнее о модели Palio</span>
-                <svg width="46" height="20" viewBox="0 0 46 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 10.2571H45M45 10.2571L32.3596 1M45 10.2571L32.3596 19" stroke="white" />
-                </svg>
-              </a>
-            </div>
+            <button class="header-menu__btn">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </button>
           </div>
-          <div class="product-box right-box mr-space">
-            <a class="product-img__box" href="#!">
-              <img class="product-img" src="images/product-2.jfif" alt="product img" />
-              <div class="product-title">
-                <h2 class="title-bg">Aliant</h2>
-                <h3 class="title">Aliant</h3>
-              </div>
-            </a>
-            <div class="product-content">
-              <p class="product-info">
-                Элегантность и основательность модели, <br />
-                отличающейся изысканным вкусом
-              </p>
-              <a class="btn" href="#!">
-                <span>Подробнее о модели Aliant</span>
-                <svg width="46" height="20" viewBox="0 0 46 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 10.2571H45M45 10.2571L32.3596 1M45 10.2571L32.3596 19" stroke="white" />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="product-box right-box ml-space">
-            <a class="product-img__box" href="#!">
-              <img class="product-img" src="images/product-3.jfif" alt="product img" />
-              <div class="product-title">
-                <h2 class="title-bg">Aliant</h2>
-                <h3 class="title">Aliant</h3>
-              </div>
-            </a>
-            <div class="product-content">
-              <p class="product-info">
-                Элегантность и основательность модели, <br />
-                отличающейся изысканным вкусом
-              </p>
-              <a class="btn" href="#!">
-                <span>Подробнее о модели Aliant</span>
-                <svg width="46" height="20" viewBox="0 0 46 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 10.2571H45M45 10.2571L32.3596 1M45 10.2571L32.3596 19" stroke="white" />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="product-box left-box">
-            <a class="product-img__box right" href="#!">
-              <img class="product-img" src="images/product-4.jfif" alt="product img" />
-              <img class="product-img__bg" src="images/product-4.jfif" alt="product img" />
-              <div class="product-title">
-                <h2 class="title-bg">Palio</h2>
-                <h3 class="title">Palio</h3>
-              </div>
-            </a>
-            <div class="product-content">
-              <p class="product-info">
-                идеальное сочетание <br />
-                старинных традиций и современной строгости
-              </p>
-              <a class="btn" href="#!">
-                <span>Подробнее о модели Palio</span>
-                <svg width="46" height="20" viewBox="0 0 46 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 10.2571H45M45 10.2571L32.3596 1M45 10.2571L32.3596 19" stroke="white" />
-                </svg>
-              </a>
+          <div class="header-nav__right">
+            <nav>
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Современные кухни</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kitchen.html">Классические кухни</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Гостиные и столовые</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Адреса салонов</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Почему именно stosa</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-right">
+              <a class="phone-number" href="tel:+74951267728">+7 (495) 126-77-28</a>
+              <a class="email-address" href="mailto:info@stosa-shop.com">info@stosa-shop.com</a>
             </div>
           </div>
         </div>
-        <a class="btn get-catalog__btn white-bg" href="#!">
-          <span>Получить каталог кухни и гостиные</span>
-          <svg width="46" height="20" viewBox="0 0 46 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 10.2571H45M45 10.2571L32.3596 1M45 10.2571L32.3596 19" stroke="white" />
-          </svg>
-        </a>
+      </header>
+      <!-- header -->
 
-        <div class="art-series">
-          <div class="title-box">
-            <h2 class="title-bg">Серия Art</h2>
-            <h3 class="title">Серия Art</h3>
+      <!-- main -->
+      <main class="main">
+        <!-- hero -->
+        <section class="intro">
+          <img src="images/hero" alt="" />
+          <div class="bottom-content">
+            <h2 class="title-bg">Современная кухня</h2>
+            <h3 class="title">Современная кухня</h3>
           </div>
+        </section>
+        <!-- hero -->
+
+        <!-- products -->
+        <section class="products">
           <div class="products-boxes">
             <div class="product-box left-box">
-              <div class="product-img__box">
-                <img class="product-img" src="images/product-5.jfif" alt="product img" />
-                <img class="product-img__bg" src="images/product-5.jfif" alt="product img" />
+              <a class="product-img__box" href="#!">
+                <img class="product-img" src="images/product-1.jfif" alt="product img" />
+                <img class="product-img__bg" src="images/product-1.jfif" alt="product img" />
+                <div class="product-title">
+                  <h2 class="title-bg">Palio</h2>
+                  <h3 class="title">Palio</h3>
+                </div>
+              </a>
+              <div class="product-content">
+                <p class="product-info">
+                  идеальное сочетание <br />
+                  старинных традиций и современной строгости
+                </p>
+                <a class="btn" href="#!">
+                  <span>Подробнее о модели Palio</span>
+                  <svg width="46" height="20" viewBox="0 0 46 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 10.2571H45M45 10.2571L32.3596 1M45 10.2571L32.3596 19" stroke="white" />
+                  </svg>
+                </a>
               </div>
             </div>
-            <div class="art-series__content">
-              <p class="art-series__info">
-                Проект ART дает конкретное решение желающим оборудовать кухню качественными материалами в соответствии с
-                любыми эстетическими и функциональными требованиями по доступной цене.
-                ART предлагает модели для оборудования кухни и гостиной, отличающиеся оригинальным, присущим Stosa
-                дизайном, в котором всегда учитывается надежность, эстетика, проектная гибкость и конкурентные цены.
-                Кухонные каркасы и фасады в моделях Stosa Art сертифицированы FSC®, указывая на происхождение древесины
-                из ответственно управляемых лесных хозяйств.
-              </p>
-              <div class="art-series__title-box">
-                <h2 class="title-bg">Kaya</h2>
-              <h3 class="title">Kaya</h3>
-              </div>
-              <p class="art-series__info">
-                идеальное сочетание <br>
-                старинных традиций и современной строгости
-              </p>
-              <a class="btn" href="#!">
-                <span>Подробнее о модели Palio</span>
-                <svg width="46" height="20" viewBox="0 0 46 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 10.2571H45M45 10.2571L32.3596 1M45 10.2571L32.3596 19" stroke="white" />
-              </svg>
+            <div class="product-box right-box mr-space">
+              <a class="product-img__box" href="#!">
+                <img class="product-img" src="images/product-2.jfif" alt="product img" />
+                <div class="product-title">
+                  <h2 class="title-bg">Aliant</h2>
+                  <h3 class="title">Aliant</h3>
+                </div>
               </a>
+              <div class="product-content">
+                <p class="product-info">
+                  Элегантность и основательность модели, <br />
+                  отличающейся изысканным вкусом
+                </p>
+                <a class="btn" href="#!">
+                  <span>Подробнее о модели Aliant</span>
+                  <svg width="46" height="20" viewBox="0 0 46 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 10.2571H45M45 10.2571L32.3596 1M45 10.2571L32.3596 19" stroke="white" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-box right-box ml-space">
+              <a class="product-img__box" href="#!">
+                <img class="product-img" src="images/product-3.jfif" alt="product img" />
+                <div class="product-title">
+                  <h2 class="title-bg">Aliant</h2>
+                  <h3 class="title">Aliant</h3>
+                </div>
+              </a>
+              <div class="product-content">
+                <p class="product-info">
+                  Элегантность и основательность модели, <br />
+                  отличающейся изысканным вкусом
+                </p>
+                <a class="btn" href="#!">
+                  <span>Подробнее о модели Aliant</span>
+                  <svg width="46" height="20" viewBox="0 0 46 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 10.2571H45M45 10.2571L32.3596 1M45 10.2571L32.3596 19" stroke="white" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-box left-box">
+              <a class="product-img__box right" href="#!">
+                <img class="product-img" src="images/product-4.jfif" alt="product img" />
+                <img class="product-img__bg" src="images/product-4.jfif" alt="product img" />
+                <div class="product-title">
+                  <h2 class="title-bg">Palio</h2>
+                  <h3 class="title">Palio</h3>
+                </div>
+              </a>
+              <div class="product-content">
+                <p class="product-info">
+                  идеальное сочетание <br />
+                  старинных традиций и современной строгости
+                </p>
+                <a class="btn" href="#!">
+                  <span>Подробнее о модели Palio</span>
+                  <svg width="46" height="20" viewBox="0 0 46 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 10.2571H45M45 10.2571L32.3596 1M45 10.2571L32.3596 19" stroke="white" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- products -->
-    </main>
-    <!-- main -->
+          <a class="btn get-catalog__btn white-bg" href="#!">
+            <span>Получить каталог кухни и гостиные</span>
+            <svg width="46" height="20" viewBox="0 0 46 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 10.2571H45M45 10.2571L32.3596 1M45 10.2571L32.3596 19" stroke="white" />
+            </svg>
+          </a>
 
-    <!-- footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="line"></div>
-        <nav>
-          <ul class="footer-list">
-            <li class="footer-list__item">
-              <a class="footer-list__link" href="#!">Современные кухни</a>
-            </li>
-            <li class="footer-list__item">
-              <a class="footer-list__link" href="#!">Классические кухни</a>
-            </li>
-          </ul>
-          <ul class="footer-list">
-            <li class="footer-list__item">
-              <a class="footer-list__link" href="#!">Гостиные и столовые</a>
-            </li>
-            <li class="footer-list__item">
-              <a class="footer-list__link" href="#!">столы и стулья</a>
-            </li>
-          </ul>
-          <ul class="footer-list">
-            <li class="footer-list__item">
-              <a class="footer-list__link" href="#!">Адреса салонов</a>
-            </li>
-            <li class="footer-list__item">
-              <a class="footer-list__link" href="#!">Почему именно stosa</a>
-            </li>
-          </ul>
-          <ul class="footer-list">
-            <li class="footer-list__item">
-              <a class="footer-list__link" href="tel:+74951267728">+7 (495) 126-77-28</a>
-            </li>
-            <li class="footer-list__item">
-              <a class="footer-list__link" href="mailto:info@stosa-shop.com">info@stosa-shop.com</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="footer-bottom">
-          <p class="copyright">
-            Официальный дилер итальянской фабрики Stosa. Copyright © 2023, Все
-            права защищены
-          </p>
-          <p class="info">
-            <a class="info" href="#!">Информация о компании</a> |
-            <a class="info" href="#!">Политика конфиденциальности</a>
-          </p>
-        </div>
-      </div>
-    </footer>
-    <!-- footer -->
-  </div>
+          <div class="art-series">
+            <div class="title-box">
+              <h2 class="title-bg">Серия Art</h2>
+              <h3 class="title">Серия Art</h3>
+            </div>
+            <div class="products-boxes ">
+              <div class="product-box left-box">
+                <div class="product-img__box last">
+                  <img class="product-img" src="images/product-5.jfif" alt="product img" />
+                  <img class="product-img__bg" src="images/product-5.jfif" alt="product img" />
+                </div>
+              </div>
+              <div class="art-series__content">
+                <p class="art-series__info">
+                  Проект ART дает конкретное решение желающим оборудовать кухню качественными материалами в соответствии
+                  с
+                  любыми эстетическими и функциональными требованиями по доступной цене.
+                  ART предлагает модели для оборудования кухни и гостиной, отличающиеся оригинальным, присущим Stosa
+                  дизайном, в котором всегда учитывается надежность, эстетика, проектная гибкость и конкурентные цены.
+                  Кухонные каркасы и фасады в моделях Stosa Art сертифицированы FSC®, указывая на происхождение
+                  древесины
+                  из ответственно управляемых лесных хозяйств.
+                </p>
+                <div class="art-series__title-box">
+                  <h2 class="title-bg">Kaya</h2>
+                  <h3 class="title">Kaya</h3>
+                </div>
+                <p class="art-series__info">
+                  идеальное сочетание <br>
+                  старинных традиций и современной строгости
+                </p>
+                <a class="btn" href="#!">
+                  <span>Подробнее о модели Palio</span>
+                  <svg width="46" height="20" viewBox="0 0 46 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 10.2571H45M45 10.2571L32.3596 1M45 10.2571L32.3596 19" stroke="white" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- products -->
+      </main>
+      <!-- main -->
 
-  <!-- swiper js link -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- custom js link -->
-  <script src="./js/main.js"></script>
-</body>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="line"></div>
+          <nav>
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#!">Современные кухни</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#!">Классические кухни</a>
+              </li>
+            </ul>
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#!">Гостиные и столовые</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#!">столы и стулья</a>
+              </li>
+            </ul>
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#!">Адреса салонов</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#!">Почему именно stosa</a>
+              </li>
+            </ul>
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="tel:+74951267728">+7 (495) 126-77-28</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="mailto:info@stosa-shop.com">info@stosa-shop.com</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer-bottom">
+            <p class="copyright">
+              Официальный дилер итальянской фабрики Stosa. Copyright © 2023, Все
+              права защищены
+            </p>
+            <p class="info">
+              <a class="info" href="#!">Информация о компании</a> |
+              <a class="info" href="#!">Политика конфиденциальности</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
+    </div>
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js link -->
+    <script src="./js/main.js"></script>
+  </body>
 
 </html>

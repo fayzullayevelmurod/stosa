@@ -6,6 +6,16 @@
   }
 }
 
+@media screen and (max-width: 1700px) {
+  .products .product-box.right-box.mr-space {
+    margin-right: 20px;
+  }
+
+  .products-boxes {
+    gap: 30px;
+  }
+}
+
 @media screen and (max-width: 1555px) {
   .header .phone-number {
     font-size: 20px;
@@ -24,6 +34,14 @@
   .header .nav-list {
     gap: 10px;
   }
+
+  .products .product-box.left-box {
+    max-width: 53%;
+  }
+
+  .products .product-box.right-box {
+    max-width: calc(100% - 58%);
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -40,6 +58,11 @@
       align-items: center;
       justify-content: space-between;
     }
+
+  }
+
+  .modern-kitchen__page .intro {
+    height: 680px;
   }
 
   .header-logo__img {
@@ -183,6 +206,18 @@
       }
     }
   }
+
+  .modern-kitchen__page .intro .bottom-content {
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+    padding: 30px 15px;
+
+    .title,
+    .title-bg {
+      text-align: center;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -256,6 +291,96 @@
   .news-events__swiper-img {
     height: auto;
 
+  }
+
+  .products-boxes {
+    flex-direction: column;
+  }
+
+  .products .product-box.left-box {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .products .product-box.right-box {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  .products .product-box.right-box.mr-space,
+  .products .product-box.right-box.ml-space {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .products .product-box.left-box .product-img__box {
+    padding: 30px 30px 0 0;
+  }
+
+  .products .product-box.right-box .product-img__box,
+  .products .product-box.left-box .product-img__box {
+    height: auto;
+  }
+
+  .products .product-img__box .product-title {
+    bottom: 8px;
+  }
+
+  .products .product-box.left-box .product-img__box.right {
+    padding-top: 30px;
+  }
+
+  .products .product-box.left-box .product-img__box.right .product-img__bg {
+    left: -30px;
+    width: calc(100% - 30px);
+  }
+
+  .products .product-img__box .product-img__bg {
+    bottom: 30px;
+    left: 30px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+  }
+
+  .products .product-img__box .product-title {
+    bottom: -8px;
+  }
+
+  .products .art-series .title-box {
+    margin: 0 auto 50px auto;
+    text-align: center;
+
+    .title,
+    .title-bg {
+      text-align: center;
+    }
+  }
+
+  .products .art-series {
+    margin-top: 100px;
+  }
+
+  .products .art-series__info {
+    text-align: center;
+  }
+
+  .products .art-series__content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .products .product-img__box.last .product-img__bg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .products .art-series__title-box {
+    text-align: center;
+  }
+
+  .products .art-series .btn {
+    margin: 50px  auto 0 auto;
   }
 }
 
@@ -394,5 +519,5 @@
   .why-stosa .title-bg {
     margin-left: -150px;
   }
-  
+
 }
