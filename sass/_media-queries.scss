@@ -5,7 +5,9 @@
     padding-right: 15px;
   }
 }
-
+.products .art-series .products-boxes {
+  flex-wrap: nowrap;
+}
 @media screen and (max-width: 1700px) {
   .products .product-box.right-box.mr-space {
     margin-right: 20px;
@@ -13,6 +15,14 @@
 
   .products-boxes {
     gap: 30px;
+  }
+  .products .product-box.right-box.ml-space {
+    margin-left: 20px;
+  }
+  .products .art-series__content {
+    margin-right: 20px;
+    width: 50%;
+    margin-left: 30px;
   }
 }
 
@@ -58,7 +68,6 @@
       align-items: center;
       justify-content: space-between;
     }
-
   }
 
   .modern-kitchen__page .intro {
@@ -77,9 +86,9 @@
     right: 0;
     width: 400px;
     padding: 30px;
-    background: rgba(51, 51, 51, .95);
+    background: rgba(51, 51, 51, 0.95);
     transform: translateX(100%);
-    transition: .34s ease-in-out;
+    transition: 0.34s ease-in-out;
     height: calc(100vh - 100px);
     border-left: 1px solid #fff;
     padding: 30px;
@@ -142,7 +151,7 @@
       white-space: nowrap;
     }
 
-    &>div {
+    & > div {
       width: 50%;
     }
   }
@@ -182,7 +191,7 @@
   .news-events .title-content {
     gap: 102px;
 
-    &>div {
+    & > div {
       width: 50%;
     }
 
@@ -201,8 +210,8 @@
       margin-top: 30px;
       justify-content: space-between;
 
-      &>button {
-        opacity: .8;
+      & > button {
+        opacity: 0.8;
       }
     }
   }
@@ -233,7 +242,7 @@
       height: 702px;
 
       img {
-        opacity: .2;
+        opacity: 0.2;
       }
     }
 
@@ -277,7 +286,6 @@
 
   .news-events__swiper {
     text-align: center;
-
   }
 
   .kitchen-box {
@@ -290,7 +298,6 @@
 
   .news-events__swiper-img {
     height: auto;
-
   }
 
   .products-boxes {
@@ -366,6 +373,7 @@
 
   .products .art-series__content {
     max-width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -380,7 +388,7 @@
   }
 
   .products .art-series .btn {
-    margin: 50px  auto 0 auto;
+    margin: 50px auto 0 auto;
   }
 }
 
@@ -468,7 +476,7 @@
     }
   }
 
-  .news-events .title-content>div {
+  .news-events .title-content > div {
     text-align: center;
     width: 100%;
   }
@@ -482,7 +490,8 @@
   }
 
   .footer .line {
-    max-width: 286px;
+    max-width: 100%;
+    width: 100%;
     border-width: 1px;
     height: 1px;
   }
@@ -504,7 +513,7 @@
     }
 
     a {
-      font-size: .875rem;
+      font-size: 0.875rem;
       letter-spacing: 2px;
       line-height: 1;
     }
@@ -519,5 +528,91 @@
   .why-stosa .title-bg {
     margin-left: -150px;
   }
+  .products .art-series__content {
+    max-width: 100%;
+  }
+  .modern-kitchen__page {
+    .btn {
+      text-align: left;
+    }
+  }
+  .modern-kitchen__page .title-bg {
+    margin-left: -150px;
+  }
+  .products .art-series__title-box .title-bg {
+    margin-left: 0;
+  }
+  .products .product-box.right-box .product-img__box,
+  .products .product-box.left-box .product-img__box {
+    height: 275px;
+  }
+  .products .product-box.left-box,
+  .products .product-box.right-box {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 15px;
+  }
+  .products .product-box.left-box .product-img__box {
+    padding: 15px 15px 0 0;
+  }
+  .products .product-img__box .product-title .title-bg {
+    margin-left: 0;
+  }
+  .products .product-box.left-box .product-img__box.right .product-img__bg {
+    left: 0;
+    bottom: 15px;
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+  }
+  .products .product-box.left-box .product-img__box.right {
+    padding-top: 15px;
 
+    .product-img {
+      padding-left: 15px;
+    }
+  }
+  .btn {
+    padding: 25px;
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .modern-kitchen__page .intro .bottom-content {
+    .title-bg {
+      display: none;
+    }
+    .title {
+      margin: 0;
+    }
+  }
+  .products .art-series__title-box {
+    margin-top: 50px;
+  }
+  .footer nav {
+    padding: 50px 0;
+  }
+  .products .get-catalog__btn{
+    margin: 50px 15px 0 15px;
+  }
+  .modern-kitchen__page .intro{
+    height: 600px;
+  }
+  .modern-kitchen__page .intro .bottom-content {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .products .product-img__box .product-title {
+    bottom: -18px;
+    .title-bg {
+      transform: translateY(-8px);
+    }
+  }
+  .footer-bottom {
+    padding: 50px 0;
+  }
 }

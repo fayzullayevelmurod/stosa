@@ -948,12 +948,24 @@ body.hidden {
     padding-right: 15px;
   }
 }
+.products .art-series .products-boxes {
+  flex-wrap: nowrap;
+}
+
 @media screen and (max-width: 1700px) {
   .products .product-box.right-box.mr-space {
     margin-right: 20px;
   }
   .products-boxes {
     gap: 30px;
+  }
+  .products .product-box.right-box.ml-space {
+    margin-left: 20px;
+  }
+  .products .art-series__content {
+    margin-right: 20px;
+    width: 50%;
+    margin-left: 30px;
   }
 }
 @media screen and (max-width: 1555px) {
@@ -1234,6 +1246,7 @@ body.hidden {
   }
   .products .art-series__content {
     max-width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -1326,7 +1339,8 @@ body.hidden {
     margin-bottom: 50px;
   }
   .footer .line {
-    max-width: 286px;
+    max-width: 100%;
+    width: 100%;
     border-width: 1px;
     height: 1px;
   }
@@ -1354,6 +1368,86 @@ body.hidden {
   .kitchen .title-bg,
   .why-stosa .title-bg {
     margin-left: -150px;
+  }
+  .products .art-series__content {
+    max-width: 100%;
+  }
+  .modern-kitchen__page .btn {
+    text-align: left;
+  }
+  .modern-kitchen__page .title-bg {
+    margin-left: -150px;
+  }
+  .products .art-series__title-box .title-bg {
+    margin-left: 0;
+  }
+  .products .product-box.right-box .product-img__box,
+  .products .product-box.left-box .product-img__box {
+    height: 275px;
+  }
+  .products .product-box.left-box,
+  .products .product-box.right-box {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 15px;
+  }
+  .products .product-box.left-box .product-img__box {
+    padding: 15px 15px 0 0;
+  }
+  .products .product-img__box .product-title .title-bg {
+    margin-left: 0;
+  }
+  .products .product-box.left-box .product-img__box.right .product-img__bg {
+    left: 0;
+    bottom: 15px;
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+  }
+  .products .product-box.left-box .product-img__box.right {
+    padding-top: 15px;
+  }
+  .products .product-box.left-box .product-img__box.right .product-img {
+    padding-left: 15px;
+  }
+  .btn {
+    padding: 25px;
+  }
+  .btn svg {
+    width: 40px;
+    height: 40px;
+  }
+  .modern-kitchen__page .intro .bottom-content .title-bg {
+    display: none;
+  }
+  .modern-kitchen__page .intro .bottom-content .title {
+    margin: 0;
+  }
+  .products .art-series__title-box {
+    margin-top: 50px;
+  }
+  .footer nav {
+    padding: 50px 0;
+  }
+  .products .get-catalog__btn {
+    margin: 50px 15px 0 15px;
+  }
+  .modern-kitchen__page .intro {
+    height: 600px;
+  }
+  .modern-kitchen__page .intro .bottom-content {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .products .product-img__box .product-title {
+    bottom: -18px;
+  }
+  .products .product-img__box .product-title .title-bg {
+    transform: translateY(-8px);
+  }
+  .footer-bottom {
+    padding: 50px 0;
   }
 }
 
