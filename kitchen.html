@@ -7,6 +7,8 @@
   <title>Document</title>
   <!-- icon -->
   <link rel="icon" href="images/company-logo.png" />
+  <!-- aos css -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- swiper css link -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- normalize css -->
@@ -17,36 +19,45 @@
 
 <body>
   <div class="wrapper modern-kitchen__page kitchen-page">
+
     <!-- header -->
     <header class="header">
       <div class="container">
-        <a class="header-logo" href="index.html">
-          <img class="header-logo__img" src="images/company-logo.png" alt="company-logo" />
-          <span class="header-logo__info">официальный <br />
-            дилер</span>
-        </a>
-        <nav>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="modern-kitchens.html">Современные кухни</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Классические кухни</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Гостиные и столовые</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Адреса салонов</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#!">Почему именно stosa</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header-right">
-          <a class="phone-number" href="tel:+74951267728">+7 (495) 126-77-28</a>
-          <a class="email-address" href="mailto:info@stosa-shop.com">info@stosa-shop.com</a>
+        <div class="header-left">
+          <a class="header-logo" href="index.html">
+            <img class="header-logo__img" src="images/company-logo.png" alt="company-logo">
+            <span class="header-logo__info">официальный <br> дилер</span>
+          </a>
+          <button class="header-menu__btn">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+        </div>
+        <div class="header-nav__right">
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Современные кухни</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kitchen.html">Классические кухни</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Гостиные и столовые</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Адреса салонов</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Почему именно stosa</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-right">
+            <a class="phone-number" href="tel:+74951267728">+7 (495) 126-77-28</a>
+            <a class="email-address" href="mailto:info@stosa-shop.com">info@stosa-shop.com</a>
+          </div>
         </div>
       </div>
     </header>
@@ -56,7 +67,6 @@
     <main class="main">
       <!-- hero -->
       <section class="intro">
-        <img src="images/hero" alt="" />
         <div class="bottom-content">
           <h2 class="title-bg">Palio</h2>
           <h3 class="title">Palio</h3>
@@ -74,7 +84,7 @@
             <span>Современные кухни</span>
           </a>
           <div class="stosa-palio__boxes">
-            <div class="left-box">
+            <div class="left-box" data-aos="fade-up" data-aos-duration="200">
               <h2 class="title">Stosa Palio</h2>
               <h4 class="sub-title">Идеальное сочетание старинных традиций и современной строгости</h4>
               <div class="desc-box">
@@ -93,11 +103,11 @@
                 </p>
               </div>
             </div>
-            <div class="right-box img-box">
+            <div class="right-box img-box" data-aos="fade-up" data-aos-duration="300">
               <img src="images/stosa-kitchen-1.png" alt="stosa-kitchen img">
             </div>
           </div>
-          <div class="stosa-palio__boxes bottom-box">
+          <div class="stosa-palio__boxes bottom-box" data-aos="fade-up" data-aos-duration="300">
             <div class="title-box">
               <h2 class="title-bg">Stosa Palio</h2>
             </div>
@@ -118,7 +128,7 @@
           </div>
         </div>
 
-        <div class="swiper-container stosa-palio__swiper">
+        <div class="swiper-container stosa-palio__swiper" data-aos="fade-up">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="images/sllider-img-1.jfif" alt="">
@@ -146,7 +156,7 @@
 
       <!-- Colors and Finishes -->
       <section class="colors-finishes">
-        <div class="content-box">
+        <div class="content-box" data-aos="fade-right">
           <div class="title-box">
             <h2 class="title-bg">Цвета и отделка</h2>
             <h3 class="title">Цвета и отделка</h3>
@@ -163,7 +173,7 @@
             </a>
           </div>
         </div>
-        <div class="tabs">
+        <div class="tabs" data-aos="fade-left">
           <div class="tab-contents">
             <div class="tab-content">
               <img src="images/colors-img-1.png" alt="colors-finishes img">
@@ -211,25 +221,25 @@
       <!-- Certified quality -->
       <section class="certified-quality">
         <div class="container">
-          <div class="title-box">
+          <div class="title-box" data-aos="fade-up" data-aos-duration="300">
             <h2 class="title-bg">Сертифицированное качество</h2>
             <h3 class="title">Сертифицированное качество</h3>
           </div>
           <div class="certificates">
-            <div class="certificate">
+            <div class="certificate" data-aos="fade-up">
               <img src="images/certificate-1.svg" alt="certificate img">
               <span class="certificate-name">CERTIFICAZIONE <br>
                 ISO 9001:2015</span>
             </div>
-            <div class="certificate">
+            <div class="certificate" data-aos="fade-up">
               <img src="images/certificate-2.svg" alt="certificate img">
               <span class="certificate-name">CERTIFICAZIONE 100% MADE <br> IN ITALY</span>
             </div>
-            <div class="certificate">
+            <div class="certificate" data-aos="fade-up">
               <img src="images/certificate-3.svg" alt="certificate img">
               <span class="certificate-name">CERTIFICAZIONE DI ORIGINE <br> ITALIANA DEL MOBILE</span>
             </div>
-            <div class="certificate">
+            <div class="certificate" data-aos="fade-up">
               <img src="images/certificate-1.svg" alt="certificate img">
               <span class="certificate-name">FSC – Forests for all <br> Forever</span>
             </div>
@@ -242,58 +252,62 @@
     <!-- main -->
 
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aos-delay="100">
       <div class="container">
         <div class="line"></div>
         <nav>
           <ul class="footer-list">
             <li class="footer-list__item">
-              <a class="footer-list__link" href="#!">Современные кухни</a>
+              <a class="footer-list__link" href="#!" data-aos="fade-right" data-aos-delay="200">Современные кухни</a>
             </li>
             <li class="footer-list__item">
-              <a class="footer-list__link" href="#!">Классические кухни</a>
-            </li>
-          </ul>
-          <ul class="footer-list">
-            <li class="footer-list__item">
-              <a class="footer-list__link" href="#!">Гостиные и столовые</a>
-            </li>
-            <li class="footer-list__item">
-              <a class="footer-list__link" href="#!">столы и стулья</a>
+              <a class="footer-list__link" href="#!" data-aos="fade-right" data-aos-delay="250">Классические кухни</a>
             </li>
           </ul>
           <ul class="footer-list">
             <li class="footer-list__item">
-              <a class="footer-list__link" href="#!">Адреса салонов</a>
+              <a class="footer-list__link" href="#!" data-aos="fade-right" data-aos-delay="300">Гостиные и
+                столовые</a>
             </li>
             <li class="footer-list__item">
-              <a class="footer-list__link" href="#!">Почему именно stosa</a>
+              <a class="footer-list__link" href="#!" data-aos="fade-right" data-aos-delay="350">столы
+                и стулья</a>
             </li>
           </ul>
           <ul class="footer-list">
             <li class="footer-list__item">
-              <a class="footer-list__link" href="tel:+74951267728">+7 (495) 126-77-28</a>
+              <a class="footer-list__link" href="#!" data-aos="fade-right" data-aos-delay="400">Адреса
+                салонов</a>
             </li>
             <li class="footer-list__item">
-              <a class="footer-list__link" href="mailto:info@stosa-shop.com">info@stosa-shop.com</a>
+              <a class="footer-list__link" href="#!" data-aos="fade-right" data-aos-delay="450">Почему
+                именно stosa</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="tel:+74951267728" data-aos="fade-right" data-aos-delay="500">+7 (495)
+                126-77-28</a>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="mailto:info@stosa-shop.com" data-aos="fade-right"
+                data-aos-delay="550">info@stosa-shop.com</a>
             </li>
           </ul>
         </nav>
         <div class="footer-bottom">
-          <p class="copyright">
-            Официальный дилер итальянской фабрики Stosa. Copyright © 2023, Все
-            права защищены
-          </p>
-          <p class="info">
-            <a class="info" href="#!">Информация о компании</a> |
-            <a class="info" href="#!">Политика конфиденциальности</a>
-          </p>
+          <p class="copyright">Официальный дилер итальянской
+            фабрики Stosa. Copyright © 2023, Все права защищены</p>
+          <p class="info"><a class="info" href="#!">Информация о компании</a> | <a class="info" href="#!">Политика
+              конфиденциальности</a></p>
         </div>
       </div>
     </footer>
     <!-- footer -->
   </div>
 
+  <!-- aos js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- swiper js link -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- custom js link -->

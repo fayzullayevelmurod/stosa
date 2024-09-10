@@ -779,6 +779,7 @@ body.hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 .stosa-palio__boxes .left-box {
   max-width: 570px;
@@ -967,6 +968,9 @@ body.hidden {
     width: 50%;
     margin-left: 30px;
   }
+  .colors-finishes {
+    padding-left: 20px;
+  }
 }
 @media screen and (max-width: 1555px) {
   .header .phone-number {
@@ -988,6 +992,15 @@ body.hidden {
   }
   .products .product-box.right-box {
     max-width: 42%;
+  }
+  .stosa-palio__content {
+    padding-left: 20px;
+  }
+  .colors-finishes .tabs {
+    max-width: 100%;
+  }
+  .colors-finishes .content-box {
+    width: 40%;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -1260,6 +1273,31 @@ body.hidden {
   .products .art-series .btn {
     margin: 50px auto 0 auto;
   }
+  .stosa-palio__content {
+    padding-left: 15px;
+  }
+  .stosa-palio__boxes > div {
+    width: 100%;
+    max-width: 50%;
+  }
+  .stosa-palio__boxes > div img {
+    object-fit: cover;
+  }
+  .stosa-palio__swiper .swiper-pagination {
+    margin-left: 15px;
+  }
+  .stosa-palio__swiper {
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .colors-finishes {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .colors-finishes .content-box {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .kitchen-box {
@@ -1448,6 +1486,68 @@ body.hidden {
   }
   .footer-bottom {
     padding: 50px 0;
+  }
+  .stosa-palio__boxes {
+    flex-direction: column;
+    align-items: start;
+  }
+  .stosa-palio__boxes > div {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .stosa-palio .sub-title {
+    margin-top: 50px;
+  }
+  .stosa-palio__content {
+    padding: 50px 0;
+  }
+  .stosa-palio .navigate-btn {
+    padding-left: 15px;
+    margin-bottom: 50px;
+  }
+  .stosa-palio__boxes .left-box {
+    max-width: 100%;
+  }
+  .stosa-palio__boxes .img-box {
+    max-width: 100%;
+    height: 400px;
+  }
+  .stosa-palio__boxes.bottom-box .title-bg {
+    margin-left: 0;
+    text-align: center;
+    font-size: 50px;
+    line-height: 56px;
+  }
+  .stosa-palio__boxes .right-box {
+    text-align: center;
+  }
+  .stosa-palio__swiper .swiper-slide {
+    height: auto;
+  }
+  .colors-finishes .tab-items .tab-item {
+    height: 80px;
+    width: 120px;
+  }
+  .colors-finishes .tabs {
+    gap: 15px;
+  }
+  .colors-finishes .tab-contents {
+    height: 580px;
+  }
+  .colors-finishes .tabs {
+    height: fit-content;
+  }
+  .colors-finishes .bottom-content .watch-more {
+    font-size: 16px;
+    line-height: 20px;
+    padding-right: 15px;
+  }
+  .stosa-palio__swiper {
+    margin-bottom: 50px;
+  }
+  .certified-quality {
+    margin-top: 50px;
   }
 }
 

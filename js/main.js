@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
-  AOS.init();
+
 
   // fixed header
   const header = document.querySelector('header');
@@ -54,7 +54,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // news-events__swiper
   // Swiperni initsializatsiya qilish
   const swiper = new Swiper('.news-events__swiper', {
-    slidesPerView: 3.5, 
+    slidesPerView: 3.5,
     spaceBetween: 40,
     navigation: {
       nextEl: '.news-events__swiper-next',
@@ -79,13 +79,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // stosa-palio__swiper
   const swiper2 = new Swiper('.stosa-palio__swiper', {
-    slidesPerView: 3, // Bir vaqtda ko'rsatiladigan slaydlar soni
-    spaceBetween: 40, // Slaydlar o'rtasidagi masofa (px)
-    speed: 700, // Slayder tezligi
-    // centeredSlides: true, // Slayder markazlash
+    slidesPerView: 3,
+    spaceBetween: 40,
+    speed: 700,
     pagination: {
-      el: '.swiper-pagination', // Paginatsiya elementini belgilash
-      clickable: true, // Paginatsiyani bosiladigan qilish
+      el: '.swiper-pagination',
+      clickable: true,
       type: 'custom',
       renderCustom: function (swiper, current, total) {
         let paginationHTML = '';
@@ -97,7 +96,21 @@ window.addEventListener('DOMContentLoaded', () => {
           }
         }
         return paginationHTML;
-      }
+      },
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
     },
   });
 
@@ -130,6 +143,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
   } catch (error) {
     console.log(error);
+
+  }
+
+  try {
+    AOS.init();
+  } catch {
 
   }
 })
