@@ -26,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     headerMenu.classList.toggle('active');
     openHeaderMenuBtn.classList.toggle('active');
+    document.body.classList.toggle('hidden');
   })
 
   // why-stosa__card
@@ -35,16 +36,13 @@ window.addEventListener('DOMContentLoaded', () => {
     const plusBtn = item.querySelector('.plus-btn');
 
     plusBtn.addEventListener('click', () => {
-      // Faqat o'zining kartochkasiga active klassini qo'shish yoki olib tashlash
       const isActive = item.classList.contains('active');
 
-      // Barcha kartochkalardagi active klassini o'chirish
       whyStosaCard.forEach(el => {
         el.classList.remove('active');
         plusBtn.classList.remove('active');
       });
 
-      // Agar o'zining kartochkasi aktiv bo'lmasa, uni aktiv qilish
       if (!isActive) {
         item.classList.add('active');
         plusBtn.classList.add('active');
