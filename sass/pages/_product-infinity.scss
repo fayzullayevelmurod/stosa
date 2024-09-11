@@ -1,6 +1,81 @@
 .bg-dark {
   background: rgba(51, 51, 51, 0.95);
 }
+
+.product-page {
+  .relative {
+    position: relative;
+  }
+
+  .intro-bottom__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 350px;
+    white-space: nowrap;
+    padding: 16px 50px 30px 50px;
+    background-color: rgba(51, 51, 51, .8);
+    z-index: 1;
+  }
+
+  .stosa-palio {
+    .left-box {
+      max-width: 590px;
+    }
+
+    .sub-title {
+      margin: 50px 0 54px 0;
+    }
+
+    .desc {
+      line-height: 27px;
+    }
+
+    &__boxes {
+      align-items: start;
+
+      .right-box {
+        margin-top: 100px;
+
+        .desc {
+          max-width: 737px;
+          width: 100%;
+          margin-top: 50px;
+        }
+      }
+
+      .img-box {
+        height: unset;
+
+        img {
+          height: 850px;
+        }
+      }
+    }
+
+    .btns {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 54px 0 51px 0;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+
+      a {
+        font-size: 16px;
+        color: #ffff;
+        border-bottom: 1px solid #fff;
+        width: fit-content;
+      }
+    }
+  }
+
+}
+
 .intro-swiper {
   height: 850px;
 
@@ -8,6 +83,7 @@
     bottom: 17px;
     top: unset;
   }
+
   .swiper-slide {
     img {
       object-fit: cover;
@@ -23,8 +99,64 @@
     height: 16px;
     opacity: 1;
     margin: 0 10px !important;
+
     &.swiper-pagination-bullet-active {
       background-color: #fff;
     }
   }
 }
+
+// opening-systems start
+.opening-systems {
+  margin: 100px 0;
+  padding-left: 0;
+
+  .tabs {
+    position: relative;
+    max-width: 1280px;
+  }
+
+  .tab-items {
+    max-width: 288px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+  }
+
+  .tab-contents {
+    max-width: 1025px;
+  }
+
+  .tab-items .tab-item {
+    z-index: 10;
+    width: 100%;
+    transform: translate(calc(-17% - 20px));
+    cursor: pointer;
+  }
+
+  .tab-items .tab-item.active {
+    transform: translateX(0);
+  }
+
+  .tab-content .content-name {
+    justify-content: end;
+  }
+
+  .content-box {
+    width: calc(100% - 1280px);
+    padding: 0 15px;
+
+    .title-box {
+      text-align: right;
+    }
+
+    .title-bg {
+      left: unset;
+      right: 0;
+    }
+  }
+}
+
+
+// opening-systems end

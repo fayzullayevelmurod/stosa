@@ -115,37 +115,41 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   // tabs
+  // Barcha .tabs elementlarini tanlash
   try {
-    const tabItems = document.querySelectorAll('.tab-item');
-    const tabContents = document.querySelectorAll('.tab-content');
+    const allTabs = document.querySelectorAll('.tabs');
+    console.log(allTabs);
 
-    function hideTabContent() {
-      tabContents.forEach(tabContent => tabContent.classList.remove('show'));
-      tabItems.forEach(tabItem => tabItem.classList.remove('active'));
-    }
-    function showTabContent(idx = 0) {
-      tabContents[idx].classList.add('show');
-      tabItems[idx].classList.add('active');
-    }
-    hideTabContent();
-    showTabContent();
+    // Har bir tabs guruhi uchun alohida event qo'shamiz
+    allTabs.forEach(tabs => {
+      const tabItems = tabs.querySelectorAll('.tab-item');
+      const tabContents = tabs.querySelectorAll('.tab-content');
 
-    tabContents.forEach((el, index) => {
-      tabItems.forEach((btn, idx) => {
-        btn.addEventListener('click', (e) => {
-          if (index == idx) {
-            hideTabContent();
-            showTabContent(idx);
-          }
-        })
-      })
-    })
+      function hideTabContent() {
+        tabContents.forEach(content => content.classList.remove('show'));
+        tabItems.forEach(item => item.classList.remove('active'));
+      }
+
+      function showTabContent(index) {
+        tabContents[index].classList.add('show');
+        tabItems[index].classList.add('active');
+      }
+
+      hideTabContent();
+      showTabContent(0); // Birinchi tabni ochish
+
+      // Har bir tab-itemga click hodisasini biriktirish
+      tabItems.forEach((tab, index) => {
+        tab.addEventListener('click', function () {
+          hideTabContent();
+          showTabContent(index);
+        });
+      });
+    });
 
   } catch (error) {
     console.log(error);
-
   }
-
   try {
     AOS.init();
   } catch {
