@@ -1,0 +1,30 @@
+.bg-dark {
+  background: rgba(51, 51, 51, 0.95);
+}
+.intro-swiper {
+  height: 850px;
+
+  .swiper-pagination {
+    bottom: 17px;
+    top: unset;
+  }
+  .swiper-slide {
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    border: 1px solid #fff;
+    background: transparent;
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+    margin: 0 10px !important;
+    &.swiper-pagination-bullet-active {
+      background-color: #fff;
+    }
+  }
+}

@@ -151,4 +151,15 @@ window.addEventListener('DOMContentLoaded', () => {
   } catch {
 
   }
+
+  // intro-swiper
+  const introSwiper = new Swiper('.intro-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    speed: 700,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
 })
