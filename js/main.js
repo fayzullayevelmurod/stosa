@@ -1,7 +1,15 @@
 window.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
+  const scrollUpBtn = document.querySelector('.scroll-up__btn');
 
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 500) {
+      scrollUpBtn.classList.add('show'); // 1000px dan past bo'lganda show qo'shish
+    } else {
+      scrollUpBtn.classList.remove('show'); // 1000px dan yuqorida bo'lsa, show olib tashlash
+    }
+  });
 
   // fixed header
   const header = document.querySelector('header');

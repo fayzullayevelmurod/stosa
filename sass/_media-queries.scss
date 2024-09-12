@@ -5,9 +5,11 @@
     padding-right: 15px;
   }
 }
+
 .products .art-series .products-boxes {
   flex-wrap: nowrap;
 }
+
 @media screen and (max-width: 1700px) {
   .products .product-box.right-box.mr-space {
     margin-right: 20px;
@@ -16,14 +18,17 @@
   .products-boxes {
     gap: 30px;
   }
+
   .products .product-box.right-box.ml-space {
     margin-left: 20px;
   }
+
   .products .art-series__content {
     margin-right: 20px;
     width: 50%;
     margin-left: 30px;
   }
+
   .colors-finishes {
     padding-left: 20px;
   }
@@ -55,14 +60,21 @@
   .products .product-box.right-box {
     max-width: calc(100% - 58%);
   }
+
   .stosa-palio__content {
     padding-left: 20px;
   }
+
   .colors-finishes .tabs {
     max-width: 100%;
   }
+
   .colors-finishes .content-box {
     width: 40%;
+  }
+
+  .colors-finishes.only-content .content-box {
+    width: 100%;
   }
 }
 
@@ -125,6 +137,36 @@
 }
 
 @media screen and (max-width: 1200px) {
+
+  .scroll-down__btn,
+  .scroll-up__btn {
+    display: none;
+  }
+
+  .diller-boxes {
+    .diller-content {
+      width: 40%;
+    }
+
+    .diller-img__box {
+      width: 60%;
+    }
+  }
+
+  .product-page .intro-bottom__content {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+
+    .title-bg {
+      margin-top: -5rem;
+    }
+
+    .title {
+      padding-bottom: 2rem;
+    }
+  }
+
   .kitchen .title-box .title {
     margin-bottom: 40px;
   }
@@ -163,7 +205,7 @@
       white-space: nowrap;
     }
 
-    & > div {
+    &>div {
       width: 50%;
     }
   }
@@ -203,7 +245,7 @@
   .news-events .title-content {
     gap: 102px;
 
-    & > div {
+    &>div {
       width: 50%;
     }
 
@@ -222,7 +264,7 @@
       margin-top: 30px;
       justify-content: space-between;
 
-      & > button {
+      &>button {
         opacity: 0.8;
       }
     }
@@ -241,7 +283,74 @@
   }
 }
 
+.colors-finishes .content-box .title {
+  white-space: nowrap;
+}
+
 @media screen and (max-width: 992px) {
+  .only-content .bottom-content {
+    margin-left: 0;
+  }
+
+  .only-content .bottom-content {
+    margin-right: 0;
+  }
+
+  .opening-systems .content-box .title-box,
+  .colors-finishes .content-box .title {
+    text-align: center;
+  }
+
+  .colors-finishes .bottom-content .watch-more {
+    padding-top: 0;
+  }
+
+  .diller-boxes .diller-content {
+    width: 100%;
+    text-align: center;
+    background: rgba(51, 51, 51, 0.95);
+  }
+
+  .diller-boxes .diller-img__box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 50%;
+    height: 100%;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .diller-content__info {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .diller-content .title {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer .line {
+    border: 1px solid #FFFFFF;
+  }
+
+  .diller-content .btn {
+    margin: 0 auto;
+  }
+
+  .diller-content__info {
+    text-align: center;
+  }
+
+  .diller-content__info {
+    padding: 50px 0;
+  }
+
   .kitchen .stosa-green {
     position: relative;
     z-index: 1;
@@ -402,11 +511,13 @@
   .products .art-series .btn {
     margin: 50px auto 0 auto;
   }
+
   .stosa-palio__content {
     padding-left: 15px;
   }
+
   .stosa-palio__boxes {
-    & > div {
+    &>div {
       width: 100%;
       max-width: 50%;
 
@@ -415,24 +526,49 @@
       }
     }
   }
+
   .stosa-palio__swiper .swiper-pagination {
     margin-left: 15px;
   }
+
   .stosa-palio__swiper {
     padding-bottom: 50px;
     padding-left: 15px;
     padding-right: 15px;
   }
+
   .colors-finishes {
     flex-direction: column;
     row-gap: 30px;
   }
+
   .colors-finishes .content-box {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .stosa-palio .navigate-btn {
+    justify-content: center;
+  }
+
+  .product-page .stosa-palio .left-box {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .product-page .stosa-palio .btns {
+    align-items: center;
+  }
+
+  .product-page .stosa-palio .links {
+    align-items: center;
+  }
+
+  .product-page .stosa-palio__boxes .img-box img {
+    height: auto;
+  }
+
   .kitchen-box {
     text-align: center;
     height: 466px;
@@ -516,7 +652,7 @@
     }
   }
 
-  .news-events .title-content > div {
+  .news-events .title-content>div {
     text-align: center;
     width: 100%;
   }
@@ -568,42 +704,52 @@
   .why-stosa .title-bg {
     margin-left: -150px;
   }
+
   .products .art-series__content {
     max-width: 100%;
   }
+
   .modern-kitchen__page {
     .btn {
       text-align: left;
     }
   }
+
   .modern-kitchen__page .title-bg {
     margin-left: -150px;
   }
+
   .products .art-series__title-box .title-bg {
     margin-left: 0;
   }
+
   .products .product-box.right-box .product-img__box,
   .products .product-box.left-box .product-img__box {
     height: 275px;
   }
+
   .products .product-box.left-box,
   .products .product-box.right-box {
     max-width: 100%;
     overflow: hidden;
     padding: 0 15px;
   }
+
   .products .product-box.left-box .product-img__box {
     padding: 15px 15px 0 0;
   }
+
   .products .product-img__box .product-title .title-bg {
     margin-left: 0;
   }
+
   .products .product-box.left-box .product-img__box.right .product-img__bg {
     left: 0;
     bottom: 15px;
     width: calc(100% - 15px);
     height: calc(100% - 15px);
   }
+
   .products .product-box.left-box .product-img__box.right {
     padding-top: 15px;
 
@@ -611,6 +757,7 @@
       padding-left: 15px;
     }
   }
+
   .btn {
     padding: 25px;
 
@@ -624,97 +771,188 @@
     .title-bg {
       display: none;
     }
+
     .title {
       margin: 0;
     }
   }
+
   .products .art-series__title-box {
     margin-top: 50px;
   }
+
   .footer nav {
     padding: 50px 0;
   }
+
   .products .get-catalog__btn {
     margin: 50px 15px 0 15px;
   }
+
   .modern-kitchen__page .intro {
     height: 600px;
   }
+
   .modern-kitchen__page .intro .bottom-content {
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .products .product-img__box .product-title {
     bottom: -18px;
+
     .title-bg {
       transform: translateY(-8px);
     }
   }
+
   .footer-bottom {
     padding: 50px 0;
   }
+
   .stosa-palio__boxes {
     flex-direction: column;
     align-items: start;
-    & > div {
+
+    &>div {
       max-width: 100%;
       padding-left: 15px;
       padding-right: 15px;
     }
   }
+
   .stosa-palio .sub-title {
     margin-top: 50px;
   }
+
   .stosa-palio__content {
     padding: 50px 0;
   }
+
   .stosa-palio .navigate-btn {
     padding-left: 15px;
     margin-bottom: 50px;
   }
+
   .stosa-palio__boxes .left-box {
     max-width: 100%;
   }
+
   .stosa-palio__boxes .img-box {
     max-width: 100%;
     height: 400px;
   }
+
   .stosa-palio__boxes.bottom-box .title-bg {
     margin-left: 0;
     text-align: center;
     font-size: 50px;
     line-height: 56px;
   }
+
   .stosa-palio__boxes .right-box {
     text-align: center;
   }
+
   .stosa-palio__swiper .swiper-slide {
     height: auto;
   }
+
   .colors-finishes .tab-items .tab-item {
     height: 80px;
     width: 120px;
   }
+
   .colors-finishes .tabs {
     gap: 15px;
   }
+
   .colors-finishes .tab-contents {
-    height: 580px;
+    height: 400px;
   }
+
+  .opening-systems {
+    .tab-items {
+      height: fit-content;
+      margin-top: auto;
+    }
+  }
+
   .colors-finishes .tabs {
     height: fit-content;
   }
-  .colors-finishes .bottom-content .watch-more{
+
+  .colors-finishes .bottom-content .watch-more {
     font-size: 16px;
     line-height: 20px;
     padding-right: 15px;
   }
+
   .stosa-palio__swiper {
     margin-bottom: 50px;
   }
-  .certified-quality{
+
+  .certified-quality {
     margin-top: 50px;
+  }
+
+  .colors-finishes {
+    .tabs {
+      overflow: hidden;
+    }
+
+  }
+
+  .only-content .bottom-content {
+    text-align: center;
+
+    .btn {
+      margin: 0 auto;
+    }
+  }
+
+  .colors-finishes .tab-items {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: row;
+    gap: 0;
+
+    .tab-item {
+      width: 100%;
+      margin-right: 0;
+      transform: translateY(10vw);
+      height: 125px;
+
+      &.active {
+        transform: translate(0);
+      }
+    }
+  }
+
+  .intro-swiper {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .certified-quality .title-bg {
+    margin-left: -200px;
+  }
+
+  .certified-quality .title {
+    line-height: 30px;
+  }
+
+  .only-content.left-content .title-bg {
+    left: -100px;
+  }
+
+  .colors-finishes .content-box .title-bg {
+    left: -100px;
   }
 }

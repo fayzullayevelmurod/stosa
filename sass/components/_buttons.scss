@@ -11,13 +11,14 @@
   gap: 20px;
   transition: all .2s linear;
   width: fit-content;
+  height: 78px;
 
   path {
     transition: all .2s linear;
   }
 
-  &:hover ,
-  &.white-bg{
+  &:hover,
+  &.white-bg {
     background: #ffffff;
     color: #333333;
 
@@ -25,6 +26,7 @@
       stroke: #333333;
     }
   }
+
   &.white-bg {
     &:hover {
       background: #ececec;

@@ -116,3 +116,74 @@ body {
 }
 
 // title
+
+.scroll-up__btn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transition: .5s cubic-bezier(.23, .95, .24, .97);
+  margin: 30px;
+  width: 95px;
+  height: 95px;
+  cursor: pointer;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.scroll-down__btn {
+  position: absolute;
+  transition: .5s cubic-bezier(.23, .95, .24, .97);
+  margin: 30px;
+  width: 95px;
+  height: 95px;
+  cursor: pointer;
+  z-index: 100;
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.slider .flickity-prev-next-button,
+.chisiamo-timeline--slider .flickity-prev-next-button {
+  background-image: url(../../images/icons/next-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 0px;
+  background-position: center;
+}
+
+.chisiamo-timeline--slider .flickity-prev-next-button.previous:before,
+.chisiamo-timeline--slider .flickity-prev-next-button:before,
+.icon-outline-arrow-right:before,
+.slider .flickity-prev-next-button:before {
+  display: none;
+}
+
+.chisiamo-timeline--slider .flickity-prev-next-button.previous {
+  transform: rotate(180deg);
+  top: 47%;
+}
+
+.chisiamo-certs--cert-indicator::after {
+  background: url(../../images/icons/down-arrow-svgrepo-com.svg);
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-size: cover;
+}
+
+// https://cdn-icons-png.flaticon.com/512/2985/2985150.png
