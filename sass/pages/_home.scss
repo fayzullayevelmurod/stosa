@@ -12,12 +12,16 @@
   z-index: 1;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(51, 51, 51, 0.75) 0%, rgba(51, 51, 51, 0) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(51, 51, 51, 0.75) 0%,
+      rgba(51, 51, 51, 0) 100%
+    );
   }
 
   .btn {
@@ -30,7 +34,6 @@
 // kitchen start
 .kitchen {
   padding: 193px 0 120px 0;
-
   .title-box {
     text-align: center;
     padding-bottom: 212px;
@@ -65,21 +68,22 @@
     z-index: 1;
     padding: 40px;
     overflow: hidden;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
 
     &:hover {
       transform: scale(1.02);
     }
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
       display: block;
       width: 100%;
       height: 100%;
-      background-image: linear-gradient(180deg, rgba(34, 34, 34, .1), #222);
+      background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.1), #222);
       z-index: 0;
     }
 
@@ -185,7 +189,7 @@
   &__card {
     position: relative;
     z-index: 1;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     max-width: 760px;
     overflow: hidden;
     height: 700px;
@@ -196,16 +200,14 @@
 
       .why-stosa__content {
         opacity: 1;
-        transition: .3s ease-in-out .3s;
+        transition: 0.3s ease-in-out 0.3s;
       }
 
       .why-stosa__card-img {
         filter: none !important;
-        transition: all .3s ease-in-out, filter .3s;
+        transition: all 0.3s ease-in-out, filter 0.3s;
       }
     }
-
-
 
     &-img {
       position: absolute;
@@ -216,7 +218,7 @@
       object-fit: cover;
       z-index: -1;
       filter: grayscale(1);
-      transition: all .3s ease-in-out, filter .3s .3s;
+      transition: all 0.3s ease-in-out, filter 0.3s 0.3s;
     }
 
     .plus-btn {
@@ -231,7 +233,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: .3s ease-in-out;
+      transition: 0.3s ease-in-out;
       z-index: 1;
 
       &.active {
@@ -257,13 +259,13 @@
   &__content {
     margin-top: auto;
     opacity: 0;
-    transition: .3s ease-in-out;
+    transition: 0.3s ease-in-out;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: linear-gradient(180deg, rgba(34, 34, 34, .2), #222);
-    padding: 30px 30px 0 30px;
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0.2), #222);
+    padding: 30px;
 
     .btn {
       margin-top: auto;
@@ -304,7 +306,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 2px solid #FFFFFF;
+      border: 2px solid #ffffff;
       border-radius: 50%;
     }
   }
@@ -346,6 +348,10 @@
       font-weight: 400;
       line-height: 24px;
       margin: 30px 0 80px 0;
+      color: #fff;
+      a {
+        color: #fff;
+      }
     }
   }
 }

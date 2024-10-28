@@ -191,7 +191,7 @@ body.hidden {
   gap: 20px;
   transition: all 0.2s linear;
   width: fit-content;
-  height: 78px;
+  max-height: 78px;
 }
 .btn path {
   transition: all 0.2s linear;
@@ -431,6 +431,7 @@ body.hidden {
   padding: 40px;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
+  color: #fff;
 }
 .kitchen-box:hover {
   transform: scale(1.02);
@@ -595,7 +596,7 @@ body.hidden {
   flex-direction: column;
   justify-content: space-between;
   background: linear-gradient(180deg, rgba(34, 34, 34, 0.2), #222);
-  padding: 30px 30px 0 30px;
+  padding: 30px;
 }
 .why-stosa__content .btn {
   margin-top: auto;
@@ -626,7 +627,7 @@ body.hidden {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
   border-radius: 50%;
 }
 .news-events .btn.white-bg {
@@ -661,6 +662,10 @@ body.hidden {
   font-weight: 400;
   line-height: 24px;
   margin: 30px 0 80px 0;
+  color: #fff;
+}
+.news-events__swiper-info a {
+  color: #fff;
 }
 
 .modern-kitchen__page .intro {
@@ -838,6 +843,10 @@ body.hidden {
 }
 .diller-img__box img {
   width: 100%;
+}
+
+.classik-kitchen__page .intro {
+  background: url(../../images/classic-kitchen-bg.jpg) no-repeat;
 }
 
 .kitchen-page .intro .bottom-content {
