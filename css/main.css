@@ -977,7 +977,7 @@ body.hidden {
   display: flex;
   align-items: start;
   gap: 20px;
-  height: 940px;
+  min-height: 940px;
   justify-content: end;
   max-width: 1314px;
   gap: 30px;
