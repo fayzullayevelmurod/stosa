@@ -97,10 +97,12 @@ window.addEventListener('DOMContentLoaded', () => {
       renderCustom: function (swiper, current, total) {
         let paginationHTML = '';
         for (let i = 1; i <= total; i++) {
+          // 10 dan kichik bo'lsa, oldiga "0" qo'shamiz, aks holda oddiy ko'rinishda bo'ladi
+          const pageNumber = i < 10 ? '0' + i : i;
           if (i === current) {
-            paginationHTML += '<span class="swiper-pagination-bullet swiper-pagination-bullet-active">0' + i + '</span>';
+            paginationHTML += `<span class="swiper-pagination-bullet swiper-pagination-bullet-active">${pageNumber}</span>`;
           } else {
-            paginationHTML += '<span class="swiper-pagination-bullet">0' + i + '</span>';
+            paginationHTML += `<span class="swiper-pagination-bullet">${pageNumber}</span>`;
           }
         }
         return paginationHTML;

@@ -1120,6 +1120,7 @@ body.hidden {
 }
 .product-page .stosa-palio__boxes .img-box img {
   height: 850px;
+  object-fit: cover;
 }
 .product-page .stosa-palio .btns {
   display: flex;
