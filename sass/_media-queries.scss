@@ -137,7 +137,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-
   .scroll-down__btn,
   .scroll-up__btn {
     display: none;
@@ -205,7 +204,7 @@
       white-space: nowrap;
     }
 
-    &>div {
+    & > div {
       width: 50%;
     }
   }
@@ -245,7 +244,7 @@
   .news-events .title-content {
     gap: 102px;
 
-    &>div {
+    & > div {
       width: 50%;
     }
 
@@ -264,7 +263,7 @@
       margin-top: 30px;
       justify-content: space-between;
 
-      &>button {
+      & > button {
         opacity: 0.8;
       }
     }
@@ -291,7 +290,19 @@
   .only-content .bottom-content {
     margin-left: 0;
   }
-
+  .colors-finishes .tab-items .tab-item {
+    height: 80px;
+  }
+  .product-page .intro-bottom__content .title-bg {
+    display: none;
+  }
+  .product-page .intro-bottom__content {
+    height: 100px;
+  }
+  .product-page .intro-bottom__content .title {
+    padding-bottom: 0;
+    transform: translateY(60px);
+  }
   .only-content .bottom-content {
     margin-right: 0;
   }
@@ -336,7 +347,7 @@
   }
 
   .footer .line {
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
   }
 
   .diller-content .btn {
@@ -517,7 +528,7 @@
   }
 
   .stosa-palio__boxes {
-    &>div {
+    & > div {
       width: 100%;
       max-width: 50%;
 
@@ -652,7 +663,7 @@
     }
   }
 
-  .news-events .title-content>div {
+  .news-events .title-content > div {
     text-align: center;
     width: 100%;
   }
@@ -816,7 +827,7 @@
     flex-direction: column;
     align-items: start;
 
-    &>div {
+    & > div {
       max-width: 100%;
       padding-left: 15px;
       padding-right: 15px;
@@ -867,12 +878,32 @@
 
   .colors-finishes .tabs {
     gap: 15px;
+    flex-direction: column;
   }
 
   .colors-finishes .tab-contents {
     height: 400px;
+    width: 100%;
   }
-
+  .colors-finishes {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .colors-finishes .tabs {
+    min-height: unset;
+  }
+  .colors-finishes .tab-content .content-name {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    background-image: linear-gradient(180deg, #111, transparent 99%);
+    text-align: center;
+    justify-content: center;
+  }
   .opening-systems {
     .tab-items {
       height: fit-content;
@@ -902,7 +933,6 @@
     .tabs {
       overflow: hidden;
     }
-
   }
 
   .only-content .bottom-content {
@@ -914,19 +944,20 @@
   }
 
   .colors-finishes .tab-items {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
     width: 100%;
     max-width: 100%;
     flex-direction: row;
     gap: 0;
+    margin-top: -90px;
 
     .tab-item {
       width: 100%;
       margin-right: 0;
       transform: translateY(10vw);
-      height: 125px;
+      height: 35vw;
 
       &.active {
         transform: translate(0);
